@@ -13,11 +13,13 @@
 h1{
     font-size: 16pt;
     color: #313a9e;
+    padding-left: 10px;
 }
 
 h2{
-   font-size: 13pt;
-   color: black;
+    font-size: 13pt;
+    color: black;
+    padding-left: 15px;
 }
 
 ul{
@@ -27,4 +29,5 @@ ul{
 p{
     color:#313a9e;
     font-size: 12pt;
+    padding-left: 15px;
 }
