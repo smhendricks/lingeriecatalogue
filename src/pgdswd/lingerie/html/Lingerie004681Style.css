@@ -1,0 +1,30 @@
+/*
+    Create a stylesheet for lingerie004681
+*/
+
+#ling1{
+    height: 600px;
+    width:  450px;
+    border: 1px black solid;
+    position: relative;
+    background-image: url();
+}
+
+h1{
+    font-size: 16pt;
+    color: #313a9e;
+}
+
+h2{
+   font-size: 13pt;
+   color: black;
+}
+
+ul{
+    color: #898ec8;   
+}
+
+p{
+    color:#313a9e;
+    font-size: 12pt;
+}
