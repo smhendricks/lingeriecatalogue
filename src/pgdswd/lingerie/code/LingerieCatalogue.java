@@ -23,7 +23,7 @@ import javax.swing.JOptionPane;
  */
 public class LingerieCatalogue extends javax.swing.JFrame {
 
-    int FIRST_PICTURE = 81, LAST_PICTURE = 90;
+    int FIRST_PICTURE = 80, LAST_PICTURE = 90;
     int counter = FIRST_PICTURE;
 
     /**
@@ -127,11 +127,11 @@ public class LingerieCatalogue extends javax.swing.JFrame {
         
         try {
 
+            counter++;
+            
             jLabel1.setIcon(createImageIcon("../images/lingerie_0046" + counter + ".png"));
             jEditorPane1.setPage(createFileUrl("../html/lingerie_0046" + counter + ".html"));
-
-            ++counter;
-
+            
             if (counter == LAST_PICTURE) {
                 counter = FIRST_PICTURE;
             }
@@ -148,13 +148,14 @@ public class LingerieCatalogue extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         try {
             
+            counter--;
+            
             jLabel1.setIcon(createImageIcon("../images/lingerie_0046" + counter + ".png"));
             jEditorPane1.setPage(createFileUrl("../html/lingerie_0046" + counter + ".html"));
-
-            --counter;
             
-            if (counter == FIRST_PICTURE) {
-                counter = LAST_PICTURE;
+            
+            if (counter == FIRST_PICTURE+1) {
+                counter = LAST_PICTURE+1;
             }
 
         } catch (IOException ex) {
