@@ -142,6 +142,8 @@ public class LingerieCatalogue extends javax.swing.JFrame {
                         JOptionPane.showMessageDialog(errorFrame, "File not found.", 
                                 "Error", JOptionPane.ERROR_MESSAGE);
         }
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     //Changes to the previous item in the catalogue
