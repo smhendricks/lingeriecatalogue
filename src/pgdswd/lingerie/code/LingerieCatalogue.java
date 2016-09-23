@@ -147,11 +147,12 @@ public class LingerieCatalogue extends javax.swing.JFrame {
     //Changes to the previous item in the catalogue
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         try {
-            --counter;
             
             jLabel1.setIcon(createImageIcon("../images/lingerie_0046" + counter + ".png"));
             jEditorPane1.setPage(createFileUrl("../html/lingerie_0046" + counter + ".html"));
 
+            --counter;
+            
             if (counter == FIRST_PICTURE) {
                 counter = LAST_PICTURE;
             }
